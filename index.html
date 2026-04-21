@@ -1,76 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>RaceSim OS Ver.Ω</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaceSim OS</title>
 
   <!-- PWA -->
-  <link rel="manifest" href="manifest.json" />
-  <meta name="theme-color" content="#0A84FF" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#000000">
 
   <!-- Icons -->
-  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <h1>RaceSim OS</h1>
+  <p>PWA version running.</p>
 
-  <!-- HEADER -->
-  <header class="header">
-    <h1>RaceSim OS Ver.Ω</h1>
-  </header>
-
-  <!-- MAIN VIEW -->
-  <main id="app">
-
-    <!-- URL INPUT -->
-    <section id="url-input-section">
-      <h2>レースURLを入力</h2>
-      <input id="race-url" type="text" placeholder="例: https://race.net/..." />
-      <button id="run-btn">解析開始</button>
-    </section>
-
-    <!-- SIMPLE VIEW -->
-    <section id="simple-view" class="view hidden">
-      <h2>Simple View</h2>
-      <div id="simple-results"></div>
-    </section>
-
-    <!-- PRO VIEW -->
-    <section id="pro-view" class="view hidden">
-      <h2>Pro View</h2>
-      <div id="pro-results"></div>
-    </section>
-
-    <!-- DASHBOARD -->
-    <section id="dashboard-view" class="view hidden">
-      <h2>Dashboard</h2>
-      <canvas id="rsim-chart"></canvas>
-      <canvas id="winrate-chart"></canvas>
-    </section>
-
-  </main>
-
-  <!-- BOTTOM NAV -->
-  <nav class="bottom-nav">
-    <button data-target="simple-view">Simple</button>
-    <button data-target="pro-view">Pro</button>
-    <button data-target="dashboard-view">Dashboard</button>
-  </nav>
-
-  <!-- JS -->
-  <script src="app.js"></script>
-
-  <!-- Service Worker -->
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-  </script>
-
+  <script src="./app.js"></script>
 </body>
 </html>
