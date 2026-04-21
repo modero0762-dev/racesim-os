@@ -1,11 +1,9 @@
 const CACHE_NAME = "racesim-cache-v1";
 const urlsToCache = [
-  "index.html",
-  "style.css",
-  "app.js",
-  "manifest.json",
-  "icons/icon-192.png",
-  "icons/icon-512.png"
+  "https://modero0762-dev.github.io/racesim-os/",
+  "https://modero0762-dev.github.io/racesim-os/index.html",
+  "https://modero0762-dev.github.io/racesim-os/app.js",
+  "https://modero0762-dev.github.io/racesim-os/style.css"
 ];
 
 self.addEventListener("install", event => {
