@@ -1,7 +1,8 @@
 {
   "name": "RaceSim OS Ver.Ω",
   "short_name": "RaceSim OS",
-  "start_url": "https://modero0762-dev.github.io/racesim-os/index.html",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#0A84FF",
